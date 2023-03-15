@@ -1,0 +1,292 @@
+// импорт обнуления
+@import "null.scss";
+// Переменные
+$white: white;
+$black: black;
+$gray: gray;
+$border: #5283b3;
+body {
+  background-color: rgb(226, 226, 226);
+}
+a {
+  color: $black;
+}
+p {
+  padding: 13px;
+}
+// Стили шапки сайта
+.header {
+  background-color: $white;
+  box-shadow: 0px 2px 1em $border;
+  position: relative;
+  width: 100%;
+
+  // .header_position
+
+  &_position {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+  }
+
+  // .header_position--item
+
+  &_position-item {
+    display: flex;
+    align-items: center;
+  }
+  &_position--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.header-item {
+  padding-left: 30px;
+}
+.header-text {
+  padding-left: 1em;
+}
+.img_logo {
+  width: 12%;
+}
+// main стили
+.Main {
+  background-color: $white;
+  border-left: 1em solid $border;
+  border-right: 1em solid $border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backmain {
+  background-image: url(/image/new2.jpg);
+
+  background-size: 100%;
+}
+.main {
+  padding: 3em;
+  width: 60%;
+  display: flex;
+  background-color: $white;
+
+  // .main_position
+  &_position {
+  }
+  &_position--text {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+.img {
+  display: flex;
+  justify-content: center;
+  // .img_main
+
+  &_main {
+    width: 100%;
+    margin: 1em;
+    box-shadow: 3px 8px 8px $gray;
+  }
+}
+.list {
+  padding: 0.5em;
+  background-color: rgba(255, 0, 0, 0.463);
+}
+
+// Подвал сайта с полезными ссылками
+.Footer {
+  background-color: $white;
+  box-shadow: 0px -2px 1em $border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #5283b3;
+
+  &_position {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  // .Footer_position--item
+
+  &_position--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  &_position-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+// адаптив
+@media screen and (max-width: 1200px) {
+  .header {
+    background-color: $white;
+    box-shadow: 0px 2px 1em $border;
+    position: relative;
+    width: 100%;
+
+    // .header_position
+
+    &_position {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+    }
+
+    // .header_position--item
+
+    &_position-item {
+      display: flex;
+      align-items: center;
+    }
+    &_position--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 998px) {
+  .header {
+    background-color: $white;
+    box-shadow: 0px 2px 1em $border;
+    position: relative;
+    width: 100%;
+
+    // .header_position
+
+    &_position {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+    }
+
+    // .header_position--item
+
+    &_position-item {
+      display: flex;
+      align-items: center;
+    }
+    &_position--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-right: 10px;
+    }
+  }
+  .img_logo {
+    width: 30%;
+  }
+  .main {
+    padding: 3em;
+    width: 80%;
+    display: flex;
+    background-color: $white;
+
+    // .main_position
+    &_position {
+    }
+    &_position--text {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: $white;
+    box-shadow: 0px 2px 1em $border;
+    position: relative;
+    width: 100%;
+
+    // .header_position
+
+    &_position {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+    }
+
+    // .header_position--item
+
+    &_position-item {
+      display: flex;
+      align-items: center;
+    }
+    &_position--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .img_logo {
+    width: 100%;
+  }
+  .header {
+    background-color: $white;
+    box-shadow: 0px 2px 1em $border;
+    position: relative;
+    width: 100%;
+
+    // .header_position
+
+    &_position {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+
+    // .header_position--item
+
+    &_position-item {
+      display: flex;
+      align-items: center;
+    }
+    &_position--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-right: 10px;
+    }
+  }
+  .Main {
+    background-color: $white;
+    border-left: 2px solid $border;
+    border-right: 2px solid $border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+    padding: 3em;
+    width: 95%;
+    display: flex;
+    background-color: $white;
+
+    // .main_position
+    &_position {
+    }
+    &_position--text {
+      font-size: 27px;
+      padding: 10px;
+    }
+  }
+}
